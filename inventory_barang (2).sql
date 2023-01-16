@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 16, 2023 at 04:04 AM
+-- Generation Time: Jan 16, 2023 at 04:38 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -28,11 +28,12 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `barang` (
-  `id_barang` int(100) NOT NULL,
-  `nama_barang` varchar(168) NOT NULL,
-  `id_satuan` int(255) NOT NULL,
-  `jumlah_stok` int(128) NOT NULL,
-  `id_kategori` int(168) NOT NULL
+  `id` int(11) NOT NULL,
+  `id_barang` int(11) NOT NULL,
+  `nama_barang` varchar(255) NOT NULL,
+  `id_satuan` int(11) NOT NULL,
+  `jumlh_stok` varchar(168) NOT NULL,
+  `id_kategori` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -92,7 +93,8 @@ CREATE TABLE `satuan` (
 -- Indexes for table `barang`
 --
 ALTER TABLE `barang`
-  ADD PRIMARY KEY (`id_barang`),
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_barang` (`id_barang`),
   ADD KEY `id_satuan` (`id_satuan`),
   ADD KEY `id_kategori` (`id_kategori`);
 
@@ -129,7 +131,7 @@ ALTER TABLE `satuan`
 -- AUTO_INCREMENT for table `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `id_barang` int(100) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `kategori_barang`
