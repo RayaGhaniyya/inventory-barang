@@ -4,14 +4,14 @@ include("koneksi.php");
 
 
 if (!isset($_GET['id'])) {
-    header('Location: listmerk.php');
+    header('Location: listsatuan.php');
 }
 
 
 $id = $_GET['id'];
 
 
-$sql = "SELECT * FROM merk WHERE id=$id";
+$sql = "SELECT * FROM satuan WHERE id=$id";
 $query = mysqli_query($db, $sql);
 $merk = mysqli_fetch_assoc($query);
 
@@ -30,20 +30,20 @@ include('head.php');
 <header>
     <p>
         <b>
-            Formulir Edit Customer
+            Formulir Edit Satuan
     </p>
 </header>
 
-<form action="proseseditmerk.php" method="POST">
-    <input type="hidden" name="id" value="<?php echo $merk['id'] ?>" />
+<form action="proseseditsatuan.php" method="POST">
+    <input type="hidden" name="id" value="<?php echo $satuan['id'] ?>" />
     <div class="container">
-        <div class="card card-merk-edit">
+        <div class="card card-satuan-edit">
             <div class="card-body">
 
                 <div class="row">
                     <div class="col-12">
-                        <label for="nama_merk">Nama Merk :</label>
-                        <input class="form-control" type="text" name="nama_merk" placeholder="Nama Merk" aria-label="default input example" value="<?php echo $merk['nama_merk'] ?>">
+                        <label for="nama_satuan">Nama Satuan :</label>
+                        <input class="form-control" type="text" name="nama_satuan" placeholder="Nama Satuan" aria-label="default input example" value="<?php echo $satuan['nama_satuan'] ?>">
 
                     </div>
                     <div class="col-12">
@@ -55,7 +55,3 @@ include('head.php');
         </div>
     </div>
 </form>
-
-<!-- </body>
-
-</html> -->

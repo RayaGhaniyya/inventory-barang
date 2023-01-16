@@ -10,9 +10,9 @@
 </header>
 
 
-<form action="storeuser.php" method="POST">
+<form action="storesatuan.php" method="POST">
     <div class="container">
-        <div class="card card-user">
+        <div class="card card-satuan">
             <div class="card-body">
 
 

@@ -10,14 +10,14 @@ include('head.php')
 </header>
 
 
-<div class="table-merk">
+<div class="table-satuan">
     <div class="table-responsive">
         <table class="table table-hover">
             <thead>
                 <tr class="table-secondary">
                     <th>Id </th>
                     <th>Nama Satuan</th>
-                    <th>Tindakan</th>
+                    <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
@@ -28,12 +28,12 @@ include('head.php')
                 while ($satuan = mysqli_fetch_array($query)) {
                     echo "<tr>";
 
-                    echo "<td>" . $satuan['id_satuan'] . "</td>";
+                    echo "<td>" . $satuan['id'] . "</td>";
                     echo "<td>" . $satuan['nama_satuan'] . "</td>";
                     echo "<td>";
-                    echo '<a href=edit-satuan.php?id=' . $satuan['id_satuan'] . ' class="btn btn-warning">Edit</a> | ';
-                    echo '<a href="hapus-satuan.php?id=' .$satuanr['id_satuan'] . '" class="btn btn-danger">Hapus</a> |';
-                    echo '<a href=detail-satuan.php?id=' .$satuanr['id_satuan'] . ' class="btn btn-info">Detail</a>  ';
+                    echo '<a href=editsatuan.php?id=' . $satuan['id'] . ' class="btn btn-warning">Edit</a> | ';
+                    echo '<a href="hapussatuan.php?id=' .$satuan['id'] . '" class="btn btn-danger">Hapus</a> |';
+                    echo '<a href=detailsatuan.php?id=' .$satuan['id'] . ' class="btn btn-info">Detail</a>  ';
                     echo "</td>";
 
                     echo "</tr>";
@@ -54,7 +54,7 @@ include('head.php')
         </div>
         <div class="col-3">
             <nav>
-                <a href="form-satuan.php" class="btn btn-light" style="margin-bottom: 1rem; margin-top:1rem; margin-left:2rem;">[+] Tambah Baru</a>
+                <a href="formsatuan.php" class="btn btn-light" style="margin-bottom: 1rem; margin-top:1rem; margin-left:2rem;">[+] Tambah Baru</a>
             </nav>
         </div>
     </div>
