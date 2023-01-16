@@ -37,7 +37,7 @@ include('head.php')
 
                     echo "<td>";
                     echo '<a href=editpemakaian.php?id=' . $pemakaian['id'] . ' class="btn btn-warning">Edit</a> | ';
-                    echo '<a href="hapuspemakaian.php?id=' . $pemakaian['id'] . '" class="btn btn-danger">Hapus</a> |';
+                    echo '<a href="hapuspemakaian.php?id=' . $pemakaian['id'] . '" class="btn btn-danger">Hapus</a> ';
 
                     echo "</td>";
 
