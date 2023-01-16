@@ -12,3 +12,45 @@ header{
     font-size: xx-large;
     text-align: center;
 }
+
+.table tr td{
+    
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.685);   
+}
+
+
+p{
+    color: rgb(255, 255, 255)    ;
+}
+
+.table{
+    
+    color: white;
+    background-color: white;
+}
+
+.table-pembelian{
+    margin: auto;
+    width: 40%;
+}
+
+.table-pemakaian{
+    margin: auto;
+    width: 40%;
+}
+
+.table-barang{
+    margin: auto;
+    width: 90%;
+}
+
+.table-satuan{
+    margin: auto;
+    width: 40%;
+}
+
+.table-kategori{
+    margin: auto;
+    width: 40%;
+}

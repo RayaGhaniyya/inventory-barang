@@ -12,9 +12,9 @@ include('head.php')
 
 <div class="table-satuan">
     <div class="table-responsive">
-        <table class="table table-hover">
+        <table class="table table-hover text-center">
             <thead>
-                <tr class="table-secondary">
+                <tr class="table">
                     <th>Id </th>
                     <th>Nama Satuan</th>
                     <th>Aksi</th>
@@ -32,8 +32,8 @@ include('head.php')
                     echo "<td>" . $satuan['nama_satuan'] . "</td>";
                     echo "<td>";
                     echo '<a href=editsatuan.php?id=' . $satuan['id'] . ' class="btn btn-warning">Edit</a> | ';
-                    echo '<a href="hapussatuan.php?id=' .$satuan['id'] . '" class="btn btn-danger">Hapus</a> |';
-                    echo '<a href=detailsatuan.php?id=' .$satuan['id'] . ' class="btn btn-info">Detail</a>  ';
+                    echo '<a href="hapussatuan.php?id=' . $satuan['id'] . '" class="btn btn-danger">Hapus</a> |';
+                    echo '<a href=detailsatuan.php?id=' . $satuan['id'] . ' class="btn btn-info">Detail</a>  ';
                     echo "</td>";
 
                     echo "</tr>";

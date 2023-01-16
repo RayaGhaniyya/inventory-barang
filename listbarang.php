@@ -12,11 +12,10 @@ include('head.php')
 
 <div class="table-barang">
     <div class="table-responsive">
-        <table class="table table-hover">
+        <table class="table table-hover text-center">
             <thead>
-                <tr class="table-secondary">
+                <tr class="table">
                     <th>Id</th>
-                    <th>Id Barang</th>
                     <th>Nama Barang</th>
                     <th>Id Satuan</th>
                     <th>Jumlah stok</th>
@@ -33,16 +32,15 @@ include('head.php')
                     echo "<tr>";
 
                     echo "<td>" . $barang['id'] . "</td>";
-                    echo "<td>" . $barang['id_barang'] . "</td>";
                     echo "<td>" . $barang['nama_barang'] . "</td>";
                     echo "<td>" . $barang['id_satuan'] . "</td>";
-                    echo "<td>" . $barang['jumlah_stok'] . "</td>";
+                    echo "<td>" . $barang['jumlh_stok'] . "</td>";
                     echo "<td>" . $barang['id_kategori'] . "</td>";
 
                     echo "<td>";
                     echo '<a href=editbarang.php?id=' . $barang['id'] . ' class="btn btn-warning">Edit</a> | ';
                     echo '<a href="hapusbarang.php?id=' . $barang['id'] . '" class="btn btn-danger">Hapus</a> |';
-                    
+
                     echo "</td>";
 
                     echo "</tr>";

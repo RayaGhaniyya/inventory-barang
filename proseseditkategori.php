@@ -7,9 +7,9 @@ if (isset($_POST['simpan'])) {
 
 
     $id = $_POST['id'];
-    $nama_barang = $_POST['nama_barang'];
+    $nama_kategori = $_POST['nama_kategori'];
 
-    $sql = "UPDATE kategori_barang SET nama_barang='$nama_barang' WHERE id=$id";
+    $sql = "UPDATE kategori_barang SET nama_kategori='$nama_kategori' WHERE id=$id";
     $query = mysqli_query($db, $sql);
 
 

@@ -1,11 +1,10 @@
-
 <?php include('./head.php') ?>
 
 
 <header>
     <p>
         <b>
-         PENDAFTARAN BARANG
+            PENDAFTARAN BARANG
         </b>
     </p>
 </header>
@@ -17,10 +16,6 @@
             <div class="card-body">
 
                 <div class="row">
-                    <div class="col-md-6">
-                        <label for="nama">Id Barang : </label>
-                        <input class="form-control" type="text" name="id_barang" placeholder="id barang" aria-label="default input example">
-                    </div>
                     <div class="col-md-6">
                         <label for="username">Nama Barang : </label>
                         <input class="form-control" type="text" name="nama_barang" placeholder="nama barang" aria-label="default input example">
