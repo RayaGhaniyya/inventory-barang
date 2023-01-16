@@ -1,16 +1,76 @@
-<!doctype html>
-<html lang="en">
+<?php
+include("koneksi.php");
+include('head.php')
+?>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-</head>
+<header>
+    <p>
+        <b>LIST BARANG</b>
+    </p>
+</header>
 
-<body>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</body>
+<div class="table-merk">
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr class="table-secondary">
+                    <th>Id</th>
+                    <th>Id Barang</th>
+                    <th>Nama Barang</th>
+                    <th>Id Satuan</th>
+                    <th>Jumlah stok</th>
+                    <th>Id Kategori</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $sql = "SELECT * FROM barang";
+                $query = mysqli_query($db, $sql);
 
-</html>
+                while ($barang = mysqli_fetch_array($query)) {
+                    echo "<tr>";
+
+                    echo "<td>" . $barang['id'] . "</td>";
+                    echo "<td>" . $barang['id_barang'] . "</td>";
+                    echo "<td>" . $barang['nama_barang'] . "</td>";
+                    echo "<td>" . $barang['id_satuan'] . "</td>";
+                    echo "<td>" . $barang['jumlah_stok'] . "</td>";
+                    echo "<td>" . $barang['id_kategori'] . "</td>";
+
+                    echo "<td>";
+                    echo '<a href=editbarang.php?id=' . $barang['id'] . ' class="btn btn-warning">Edit</a> | ';
+                    echo '<a href="hapusbarang.php?id=' . $barang['id'] . '" class="btn btn-danger">Hapus</a> |';
+                    
+                    echo "</td>";
+
+                    echo "</tr>";
+                }
+                ?>
+            </tbody>
+
+        </table>
+    </div>
+</div>
+
+<div class="container text-center">
+    <div class="row justify-content-center">
+        <div class="col-2 pt-4 pe-5">
+            <p>
+                Total: <?php echo mysqli_num_rows($query) ?>
+            </p>
+        </div>
+        <div class="col-3">
+            <nav>
+                <a href="formbarang.php" class="btn btn-light" style="margin-bottom: 1rem; margin-top:1rem; margin-left:2rem;">[+] Tambah Baru</a>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+
+
+<?php
+include('bottom.php');
+?>
