@@ -12,9 +12,9 @@ include('head.php')
 
 <div class="table-barang">
     <div class="table-responsive">
-        <table class="table table-hover">
+        <table class="table table-hover text-center">
             <thead>
-                <tr class="table-secondary">
+                <tr class="table">
                     <th>Id</th>
                     <th>Id Barang</th>
                     <th>Nama Barang</th>
@@ -42,7 +42,7 @@ include('head.php')
                     echo "<td>";
                     echo '<a href=editbarang.php?id=' . $barang['id'] . ' class="btn btn-warning">Edit</a> | ';
                     echo '<a href="hapusbarang.php?id=' . $barang['id'] . '" class="btn btn-danger">Hapus</a> |';
-                    
+
                     echo "</td>";
 
                     echo "</tr>";
