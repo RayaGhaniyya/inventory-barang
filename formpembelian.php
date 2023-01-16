@@ -19,7 +19,7 @@ include('head.php');
 <header>
     <p>
         <b>
-            FORM PEMBELIAN
+            DAFTAR PEMBELIAN
         </b>
     </p>
 </header>

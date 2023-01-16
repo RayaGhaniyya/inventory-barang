@@ -4,14 +4,14 @@
 <header>
     <p>
         <b>
-            PENDAFTARAN BARANG
+            PENDAFTARAN PEMAKAIAN
         </b>
     </p>
 </header>
 
 
 <form action="storepemakaian.php" method="POST">
-<?php
+    <?php
     include("koneksi.php");
     $sql = "SELECT * FROM barang";
     $query = mysqli_query($db, $sql);
