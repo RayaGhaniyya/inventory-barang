@@ -42,6 +42,8 @@ include('head.php');
 
     <input type="hidden" name="id" value="<?php echo $barang['id'] ?>" />
 
+
+
     <div class="container">
         <div class="card card-barang-edit">
             <div class="card-body">
@@ -60,8 +62,8 @@ include('head.php');
 
                             <option value="">Pilih Satuan</option>
                             <?php
-                            while ($satuan = mysqli_fetch_assoc($query)) {
-                                $selected = $satuan['id'] == $barang['id_satuan'] ? 'selected="selected"' : '';
+                            while ($satuan = mysqli_fetch_assoc($querysatuan)) {
+                                $selected = $satuan['id'] == $barang['id_satuan'] ? 'selected' : '';
                                 echo "<option value=" . $satuan['id'] . " $selected>" . $satuan['nama_satuan'] . "</option>";
                             } ?>
                         </select>
