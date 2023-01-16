@@ -48,7 +48,7 @@ include('head.php');
                         <label for="kode_pemakaian">Kode pemakaian :</label>
                         <input class="form-control" type="text" name="kode_pemakaian" placeholder="masukkan kode pemakaian" aria-label="default input example" value="<?php echo $pemakaian['kode_pemakaian'] ?>">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-6">
 
                         <label for="id_barang">Pilih Barang: </label>
                         <select name="id_barang" class="form-control" aria-label="default input example">
@@ -59,14 +59,15 @@ include('head.php');
                                 echo "<option value=" . $barang['id_barang'] . " $selected>" . $barang['id_barang'] . "</option>";
                             } ?>
                         </select>
-                        <div class="col-6">
-                            <label for="jumlah">jumlah :</label>
-                            <input class="form-control" type="text" name="jumlah" placeholder="masukkan jumlah" aria-label="default input example" value="<?php echo $pemakaian['jumlah'] ?>">
-                        </div>
-                        <div class="col-12">
-                            <input type="submit" value="Simpan" name="simpan" class="btn btn-dark" />
-                        </div>
                     </div>
+                    <div class="col-6">
+                        <label for="jumlah">jumlah :</label>
+                        <input class="form-control" type="text" name="jumlah" placeholder="masukkan jumlah" aria-label="default input example" value="<?php echo $pemakaian['jumlah'] ?>">
+                    </div>
+                    <div class="col-12">
+                        <input type="submit" value="Simpan" name="simpan" class="btn btn-dark" />
+                    </div>
+
 
                 </div>
             </div>
