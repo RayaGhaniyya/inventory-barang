@@ -18,7 +18,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>INVENTORY BARANG</title>
 </head>
 
 
@@ -37,13 +37,19 @@
                         <a class="nav-link active" aria-current="page" href="crud.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="list-satuan.php">Satuan</a>
+                        <a class="nav-link" href="listpembelian.php">Pembelian</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="listmerk.php">Merk</a>
+                        <a class="nav-link" href="listpemakaian.php">Pemakaian</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="listmotor.php">Motor</a>
+                        <a class="nav-link" href="listsatuan.php">Satuan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="listkategori.php">Kategori Barang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="listbarang.php">barang</a>
                     </li>
                 </ul>
             </div>
