@@ -55,7 +55,7 @@ include('head.php')
         </div>
         <div class="col-3">
             <nav>
-                <a href="listkategori.php" class="btn btn-light" style="margin-bottom: 1rem; margin-top:1rem; margin-left:2rem;">[+] Tambah Baru</a>
+                <a href="formkategori.php" class="btn btn-light" style="margin-bottom: 1rem; margin-top:1rem; margin-left:2rem;">[+] Tambah Baru</a>
             </nav>
         </div>
     </div>
