@@ -7,15 +7,17 @@ if (isset($_POST['simpan'])) {
 
 
     $id = $_POST['id'];
-    $nama_barang = $_POST['nama_barang'];
+    $kode_pemakaian = $_POST['kode_pemakaian'];
+    $id_barang = $_POST['id_barang'];
+    $jumlah = $_POST['jumlah'];
 
-    $sql = "UPDATE kategori_barang SET nama_barang='$nama_barang' WHERE id=$id";
+    $sql = "UPDATE pemakaian SET kode_pemakaian='$kode_pemakaian', id_barang='$id_barang', jumlah='$jumlah' WHERE id=$id";
     $query = mysqli_query($db, $sql);
 
 
     if ($query) {
 
-        header('Location: listkategori.php');
+        header('Location: listpemakaian.php');
     } else {
 
         die("Gagal menyimpan perubahan...");

@@ -34,7 +34,7 @@ include('head.php');
 </header>
 
 <form action="proseseditpemakaian.php" method="POST">
-    <input type="hidden" name="id" value="<?php echo $kategori['id'] ?>" />
+    <input type="hidden" name="id" value="<?php echo $pemakaian['id'] ?>" />
     <div class="container">
         <div class="card card-kategori-edit">
             <div class="card-body">
