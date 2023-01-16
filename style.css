@@ -54,3 +54,38 @@ p{
     margin: auto;
     width: 30%;
 }
+
+.btn-dark{
+    margin-top: 1rem;
+}       
+
+.card-kategori{
+    
+    margin: auto;
+    width: 40%;
+}
+
+.card-satuan{
+    
+    margin: auto;
+    width: 40%;
+}
+
+.card-pembelian{
+    
+    margin: auto;
+    width: 50%;
+}
+
+.card-pemakaian{
+    
+    margin: auto;
+    width: 20%;
+}
+
+.card-barang{
+    
+    margin: auto;
+    width: 40%;
+}
+

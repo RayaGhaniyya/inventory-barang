@@ -1,11 +1,10 @@
-
 <?php include('./head.php') ?>
 
 
 <header>
     <p>
         <b>
-         PENDAFTARAN BARANG
+            PENDAFTARAN BARANG
         </b>
     </p>
 </header>
@@ -13,7 +12,7 @@
 
 <form action="storepemakaian.php" method="POST">
     <div class="container">
-        <div class="card card-user">
+        <div class="card card-pemakaian">
             <div class="card-body">
 
                 <div class="row">

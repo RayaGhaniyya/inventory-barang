@@ -12,7 +12,7 @@
 
 <form action="storebarang.php" method="POST">
     <div class="container">
-        <div class="card card-user">
+        <div class="card card-barang">
             <div class="card-body">
 
                 <div class="row">
