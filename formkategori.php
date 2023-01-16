@@ -19,8 +19,8 @@ include('head.php')
 
                 <div class="row">
                     <div class="col-md-12">
-                        <label for="nama_barang">Nama Barang: </label>
-                        <input class="form-control" type="text" name="nama_barang" placeholder="Nama Barang" aria-label="default input example">
+                        <label for="nama_kategori">Nama Kategori: </label>
+                        <input class="form-control" type="text" name="nama_kategori" placeholder="Nama Kategori" aria-label="default input example">
                     </div>
 
                     <div class="col-md-12">

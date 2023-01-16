@@ -6,3 +6,9 @@ body{
     position: relative;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url(bg.jpg);
 }
+
+header{
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+}

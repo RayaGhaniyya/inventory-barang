@@ -8,12 +8,12 @@ if( isset($_GET['id']) ){
     $id = $_GET['id'];
 
    
-    $sql = "DELETE FROM satuan WHERE id=$id";
+    $sql = "DELETE FROM kategori WHERE id=$id";
     $query = mysqli_query($db, $sql);
 
     
     if( $query ){
-        header('Location: listsatuan.php');
+        header('Location: listkategori.php');
     } else {
         die("gagal menghapus...");
     }
@@ -21,5 +21,3 @@ if( isset($_GET['id']) ){
 } else {
     die("akses dilarang...");
 }
-
-?>

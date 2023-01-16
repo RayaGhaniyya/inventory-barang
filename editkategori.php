@@ -41,8 +41,8 @@ include('head.php');
 
                 <div class="row">
                     <div class="col-12">
-                        <label for="nama_barang">Nama barang :</label>
-                        <input class="form-control" type="text" name="nama_barang" placeholder="Nama Barang" aria-label="default input example" value="<?php echo $kategori['nama_barang'] ?>">
+                        <label for="nama_kategori">Nama Kategori :</label>
+                        <input class="form-control" type="text" name="nama_kategori" placeholder="Nama Kategori" aria-label="default input example" value="<?php echo $kategori['nama_kategori'] ?>">
 
                     </div>
                     <div class="col-12">
