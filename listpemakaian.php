@@ -19,6 +19,7 @@ include('head.php')
                     <th>Kode Pemakaian</th>
                     <th>Id Barang</th>
                     <th>Jumlah</th>
+                    <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
