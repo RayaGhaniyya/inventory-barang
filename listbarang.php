@@ -16,7 +16,6 @@ include('head.php')
             <thead>
                 <tr class="table">
                     <th>Id</th>
-                    <th>Id Barang</th>
                     <th>Nama Barang</th>
                     <th>Id Satuan</th>
                     <th>Jumlah stok</th>
@@ -33,10 +32,9 @@ include('head.php')
                     echo "<tr>";
 
                     echo "<td>" . $barang['id'] . "</td>";
-                    echo "<td>" . $barang['id_barang'] . "</td>";
                     echo "<td>" . $barang['nama_barang'] . "</td>";
                     echo "<td>" . $barang['id_satuan'] . "</td>";
-                    echo "<td>" . $barang['jumlah_stok'] . "</td>";
+                    echo "<td>" . $barang['jumlh_stok'] . "</td>";
                     echo "<td>" . $barang['id_kategori'] . "</td>";
 
                     echo "<td>";

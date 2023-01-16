@@ -7,7 +7,7 @@ if (isset($_POST['daftar'])) {
 
     // 
     $id = $_POST['id'];
-    $id_barang = $_POST['id_barang'];
+
     $nama_barang = $_POST['nama_barang'];
     $id_satuan = $_POST['id_satuan'];
     $jumlh_stok = $_POST['jumlh_stok'];
@@ -15,7 +15,7 @@ if (isset($_POST['daftar'])) {
 
 
     // 
-    $sql = "INSERT INTO barang (id, id_barang, nama_barang, id_satuan, jumlh_stok, id_kategori) VALUE ('$id', '$id_barang', '$nama_barang', '$id_satuan', '$jumlh_stok', '$id_kategori')";
+    $sql = "INSERT INTO barang (id, nama_barang, id_satuan, jumlh_stok, id_kategori) VALUE ('$id', '$nama_barang', '$id_satuan', '$jumlh_stok', '$id_kategori')";
     $query = mysqli_query($db, $sql);
 
     // 

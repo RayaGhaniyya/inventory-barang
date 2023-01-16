@@ -40,10 +40,6 @@ include('head.php');
             <div class="card-body">
 
                 <div class="row">
-                    <!-- <div class="col-12">
-                        <label for="id_barang">Id Barang :</label>
-                        <input class="form-control" type="text" name="id_barang" placeholder="masukkan id barang" aria-label="default input example" value="<?php echo $barang['id_barang'] ?>">
-                    </div> -->
                     <div class="col-12">
                         <label for="nama_barang">Nama Barang :</label>
                         <input class="form-control" type="text" name="nama_barang" placeholder="masukkan nama barang" aria-label="default input example" value="<?php echo $barang['nama_barang'] ?>">

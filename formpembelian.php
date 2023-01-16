@@ -35,14 +35,12 @@ include('head.php');
     <div class="container">
         <div class="card card-user">
             <div class="card-body">
-            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
                         <label for="kode_pembelian">Kode Pembelian: </label>
                         <input class="form-control" type="text" name="kode_pembelian" placeholder="Kode Pembelian" aria-label="default input example">
                     </div>
 
-
-
-                <div class="row">
                     <div class="col-md-6">
                         <label for="id_barang">Pilih Barang: </label>
                         <select name="id_barang" class="form-control" aria-label="default input example">
@@ -54,7 +52,7 @@ include('head.php');
                         </select>
                     </div>
 
-                  
+
 
                     <div class="col-md-6">
                         <label for="jumalah">Jumlah: </label>
