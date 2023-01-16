@@ -33,7 +33,7 @@ include('head.php');
 
 
     <div class="container">
-        <div class="card card-user">
+        <div class="card card-pembelian">
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-6">

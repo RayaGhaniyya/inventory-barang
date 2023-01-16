@@ -1,4 +1,3 @@
-
 <?php include('head.php') ?>
 
 <header>
@@ -17,12 +16,12 @@
 
 
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="nama_satuan">Nama Satuan: </label>
                         <input class="form-control" type="text" name="nama_satuan" placeholder="nama_satuan" aria-label="default input example">
                     </div>
                     <div class="col-md-12">
-                        <input type="submit" value="Daftar" name="daftar" class="btn btn-primary" />
+                        <input type="submit" value="Daftar" name="daftar" class="btn btn-dark" />
                     </div>
                 </div>
             </div>

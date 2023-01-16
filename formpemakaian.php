@@ -1,11 +1,11 @@
 
-<?php include('head.php') ?>
+<?php include('./head.php') ?>
 
 
 <header>
     <p>
         <b>
-         PENDAFTARAN BARANG
+            PENDAFTARAN BARANG
         </b>
     </p>
 </header>
@@ -18,7 +18,7 @@
     $query = mysqli_query($db, $sql);
     ?>
     <div class="container">
-        <div class="card card-user">
+        <div class="card card-pemakaian">
             <div class="card-body">
 
                 <div class="row">
