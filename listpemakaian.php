@@ -50,7 +50,7 @@ include('head.php')
     </div>
 </div>
 
-<div class="container text-center">
+<div class="container text-ucenter">
     <div class="row justify-content-center">
         <div class="col-2 pt-4 pe-5">
             <p>
