@@ -4,11 +4,11 @@ include('head.php');
 ?>
 
 <!-- <div class="home">
-  <div class="container">
+  <div class="container"> -->
 
-    <div class="row">
-      
-      <div class="col-8 pt-5 pb-5">
+    <!-- <div class="row"> -->
+      <!-- gambar -->
+      <!-- <div class="col-8 pt-5 pb-5">
         <div id="carouselExampleDark" class="carousel carousel-dark slide">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -38,11 +38,11 @@ include('head.php');
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-      </div>
+      </div> -->
 
 
-      
-      <div class="col-4 pt-5">
+      <!-- akhir gambar -->
+      <!-- <div class="col-4 pt-5">
 
         <div class="d-flex flex-column mb-3 justify-content-center text-start">
           <div class="p-2">
@@ -71,13 +71,13 @@ include('bottom.php');
 ?>
 
 <?php if (isset($_GET['status'])) : ?>
-  <p class="status" style="text-align: center; font-size: xx-large;">
-    <?php
-    if ($_GET['status'] == 'sukses') {
-      echo "Pendaftaran berhasil!";
-    } else {
-      echo "Pendaftaran gagal!";
-    }
-    ?>
-  </p>
+    <p class="status" style="text-align: center; font-size: xx-large;">
+        <?php
+        if ($_GET['status'] == 'sukses') {
+            echo "Pendaftaran berhasil!";
+        } else {
+            echo "Pendaftaran gagal!";
+        }
+        ?>
+    </p>
 <?php endif; ?>
