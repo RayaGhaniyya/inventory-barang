@@ -37,7 +37,13 @@
                         <a class="nav-link active" aria-current="page" href="crud.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="list-satuan.php">Satuan</a>
+                        <a class="nav-link" href="listpembelian.php">Pembelian</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="listpemakaian.php">Pemakaian</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="listsatuan.php">Satuan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="listkategori.php">Kategori Barang</a>
