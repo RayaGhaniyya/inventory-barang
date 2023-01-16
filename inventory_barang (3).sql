@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 16, 2023 at 04:38 AM
+-- Generation Time: Jan 16, 2023 at 05:01 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -81,7 +81,7 @@ CREATE TABLE `pembelian` (
 --
 
 CREATE TABLE `satuan` (
-  `id_satuan` int(100) NOT NULL,
+  `id` int(100) NOT NULL,
   `nama_satuan` varchar(168) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -121,7 +121,7 @@ ALTER TABLE `pembelian`
 -- Indexes for table `satuan`
 --
 ALTER TABLE `satuan`
-  ADD PRIMARY KEY (`id_satuan`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -155,7 +155,7 @@ ALTER TABLE `pembelian`
 -- AUTO_INCREMENT for table `satuan`
 --
 ALTER TABLE `satuan`
-  MODIFY `id_satuan` int(100) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
