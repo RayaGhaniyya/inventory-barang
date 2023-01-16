@@ -10,7 +10,7 @@ include('head.php')
 </header>
 
 
-<div class="table-merk">
+<div class="table-barang">
     <div class="table-responsive">
         <table class="table table-hover">
             <thead>
@@ -21,6 +21,7 @@ include('head.php')
                     <th>Id Satuan</th>
                     <th>Jumlah stok</th>
                     <th>Id Kategori</th>
+                    <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>

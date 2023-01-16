@@ -10,7 +10,7 @@ include('head.php')
 </header>
 
 
-<div class="table-merk">
+<div class="table-pemakaian">
     <div class="table-responsive">
         <table class="table table-hover">
             <thead>

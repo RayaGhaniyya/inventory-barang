@@ -41,15 +41,15 @@ include('head.php');
 
                 <div class="row">
                     <div class="col-12">
-                        <label for="nama_barang">Kode pemakaian :</label>
+                        <label for="kode_pemakaian">Kode pemakaian :</label>
                         <input class="form-control" type="text" name="kode_pemakaian" placeholder="masukkan kode pemakaian" aria-label="default input example" value="<?php echo $pemakaian['kode_pemakaian'] ?>">
                     </div>
                     <div class="col-12">
-                        <label for="nama_barang">Id Barang :</label>
+                        <label for="id_barang">Id Barang :</label>
                         <input class="form-control" type="text" name="id_barang" placeholder="masukkan id barang" aria-label="default input example" value="<?php echo $pemakaian['id_barang'] ?>">
                     </div>
                     <div class="col-12">
-                        <label for="nama_barang">jumlah :</label>
+                        <label for="jumlah">jumlah :</label>
                         <input class="form-control" type="text" name="jumlah" placeholder="masukkan jumlah" aria-label="default input example" value="<?php echo $pemakaian['jumlah'] ?>">
                     </div>
                     <div class="col-12">
