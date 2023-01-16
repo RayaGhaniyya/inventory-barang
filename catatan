@@ -1,0 +1,46 @@
+1.PEMBELIAN
+2.stok
+3.pemakaian
+4.barang
+5.satuan
+
+tabel
+
+-barang
+1.id barang
+2.nama barang
+3.id satuan
+4.jumlah stok
+5.id_kategori
+
+
+-satuan
+1.id satuan
+2.namasatuan
+
+
+
+-pembelian
+1.id
+2.kode pembelian
+3.id_barang
+4.jumlah
+5.harga
+
+-pemakaian
+1.id
+2.kode pemakaian
+3.id_barang
+4.jumlah
+
+-kategori barang
+1.id
+2.nama kategori
+
+$jumlah = $_POST['jumlah'];
+$id_barang = $_POST['id_barang'];
+
+INSERT INTO pembelian ................
+
+UPDATE barang SET stok = stok + $jumlah WHERE id_barang = $id_barang;
+
