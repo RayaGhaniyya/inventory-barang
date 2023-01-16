@@ -21,6 +21,7 @@ include('head.php')
                     <th>Id Satuan</th>
                     <th>Jumlah stok</th>
                     <th>Id Kategori</th>
+                    <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>

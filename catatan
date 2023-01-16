@@ -7,7 +7,7 @@
 tabel
 
 -barang
-1.id barang
+1.id 
 2.nama barang
 3.id satuan
 4.jumlah stok
