@@ -10,7 +10,7 @@ include('head.php');
 
 <div class="table-pembelian">
     <div class="table-responsive">
-        <table class="table table-hover">
+        <table class="table table-hover text-center">
             <thead>
                 <tr class="table">
                     <th>Id</th>
@@ -18,7 +18,7 @@ include('head.php');
                     <th>id barang</th>
                     <th>Jumlah</th>
                     <th>Harga</th>
-                    <th>Tindakan</th>
+                    <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
@@ -43,8 +43,7 @@ include('head.php');
 
                     echo "<td>";
                     echo '<a href=editpembelian.php?id=' . $pembelian['id'] . ' class="btn btn-warning">Edit</a> | ';
-                    echo '<a href="hapuspembelian.php?id=' . $pembelian['id'] . '" class="btn btn-danger">Hapus</a> |';
-                    echo '<a href=detailpembelian.php?id=' . $pembelian['id'] . ' class="btn btn-info">Detail</a>  ';
+                    echo '<a href="hapuspembelian.php?id=' . $pembelian['id'] . '" class="btn btn-danger">Hapus</a> ';
                     echo "</td>";
 
                     echo "</tr>";

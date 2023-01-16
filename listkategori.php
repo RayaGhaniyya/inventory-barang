@@ -33,8 +33,8 @@ include('head.php')
 
                     echo "<td>";
                     echo '<a href=editkategori.php?id=' . $kategori['id'] . ' class="btn btn-warning">Edit</a> | ';
-                    echo '<a href="hapuskategori.php?id=' . $kategori['id'] . '" class="btn btn-danger">Hapus</a> |';
-                    echo '<a href=detailkategori.php?id=' . $kategori['id'] . ' class="btn btn-info">Detail</a>  ';
+                    echo '<a href="hapuskategori.php?id=' . $kategori['id'] . '" class="btn btn-danger">Hapus</a> ';
+
                     echo "</td>";
 
                     echo "</tr>";
