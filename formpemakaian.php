@@ -11,6 +11,11 @@
 
 
 <form action="storepemakaian.php" method="POST">
+<?php
+    include("koneksi.php");
+    $sql = "SELECT * FROM barang";
+    $query = mysqli_query($db, $sql);
+    ?>
     <div class="container">
         <div class="card card-pemakaian">
             <div class="card-body">
@@ -21,8 +26,14 @@
                         <input class="form-control" type="text" name="kode_pemakaian" placeholder="masukkan kode pemakaian" aria-label="default input example">
                     </div>
                     <div class="col-md-6">
-                        <label for="username">Id Barang : </label>
-                        <input class="form-control" type="text" name="id_barang" placeholder="masukkan id barang" aria-label="default input example">
+                        <label for="id_barang">Pilih Barang: </label>
+                        <select name="id_barang" class="form-control" aria-label="default input example">
+                            <option value="">Pilih Barang</option>
+                            <?php
+                            while ($barang = mysqli_fetch_assoc($query)) {
+                                echo "<option value=" . $barang['id'] . ">" . $barang['nama_barang'] . "</option>";
+                            } ?>
+                        </select>
                     </div>
                     <div class="col-md-6">
                         <label for="no_hp">Jumlah : </label>
