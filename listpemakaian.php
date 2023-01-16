@@ -10,11 +10,11 @@ include('head.php')
 </header>
 
 
-<div class="table-merk">
+<div class="table-pemakaian">
     <div class="table-responsive">
-        <table class="table table-hover">
+        <table class="table table-hover text-center">
             <thead>
-                <tr class="table-secondary">
+                <tr class="table">
                     <th>Id</th>
                     <th>Kode Pemakaian</th>
                     <th>Id Barang</th>
@@ -38,7 +38,7 @@ include('head.php')
                     echo "<td>";
                     echo '<a href=editpemakaian.php?id=' . $pemakaian['id'] . ' class="btn btn-warning">Edit</a> | ';
                     echo '<a href="hapuspemakaian.php?id=' . $pemakaian['id'] . '" class="btn btn-danger">Hapus</a> |';
-                    
+
                     echo "</td>";
 
                     echo "</tr>";

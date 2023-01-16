@@ -14,7 +14,7 @@ include('head.php')
     <div class="table-responsive">
         <table class="table table-hover text-center">
             <thead>
-                <tr class="table-secondary">
+                <tr class="table">
                     <th>Id</th>
                     <th>Nama Kategori</th>
                     <th>Aksi</th>
