@@ -43,19 +43,31 @@ include('head.php');
                 <div class="row">
                     <div class="col-12">
                         <label for="nama_barang">Nama Barang :</label>
-                        <input class="form-control" type="text" name="nama_barang" placeholder="masukkan nama barang" aria-label="default input example" value="<?php echo $barang['nama_barang'] ?>">
+                        <input class="form-control" type="text" name="nama_barang" placeholder="masukkan nama barang"
+                            aria-label="default input example" value="<?php echo $barang['nama_barang'] ?>">
                     </div>
-                    <div class="col-12">
-                        <label for="id_satuan">Id satuan :</label>
-                        <input class="form-control" type="text" name="id_satuan" placeholder="masukkan id satuan" aria-label="default input example" value="<?php echo $barang['id_satuan'] ?>">
+                    <div class="col-md-6">
+
+                        <label for="id_satuan">Pilih Satuan: </label>
+                        <select name="id_satuan" class="form-control" aria-label="default input example">
+                            <option value="">Pilih Satuan</option>
+                            <?php
+    while ($satuan = mysqli_fetch_assoc($querysatuan)) {
+        $selected = $satuan['id_satuan'] == $satuan['id_satuan'] ? 'selected="selected"' : '';
+        echo "<option value=" . $satuan['id_satuan'] . " $selected>" . $satuan['id_satuan'] . "</option>";
+    } ?>
+                        </select>
+
                     </div>
                     <div class="col-12">
                         <label for="jumlh_stok">Jumlh Stok :</label>
-                        <input class="form-control" type="text" name="jumlh_stok" placeholder="masukkan jumlah stok" aria-label="default input example" value="<?php echo $barang['jumlh_stok'] ?>">
+                        <input class="form-control" type="text" name="jumlh_stok" placeholder="masukkan jumlah stok"
+                            aria-label="default input example" value="<?php echo $barang['jumlh_stok'] ?>">
                     </div>
                     <div class="col-12">
                         <label for="id_kategori">Id Kategori :</label>
-                        <input class="form-control" type="text" name="id_kategori" placeholder="masukkan id kategori" aria-label="default input example" value="<?php echo $barang['id_kategori'] ?>">
+                        <input class="form-control" type="text" name="id_kategori" placeholder="masukkan id kategori"
+                            aria-label="default input example" value="<?php echo $barang['id_kategori'] ?>">
                     </div>
                     <div class="col-12">
                         <input type="submit" value="Simpan" name="simpan" class="btn btn-dark" />
