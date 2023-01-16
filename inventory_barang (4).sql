@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 16, 2023 at 05:01 AM
+-- Generation Time: Jan 16, 2023 at 06:12 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -60,6 +60,13 @@ CREATE TABLE `pemakaian` (
   `jumlah` int(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `pemakaian`
+--
+
+INSERT INTO `pemakaian` (`id`, `kode_pemakaian`, `id_barang`, `jumlah`) VALUES
+(1, 0, 1, 0);
+
 -- --------------------------------------------------------
 
 --
@@ -69,9 +76,9 @@ CREATE TABLE `pemakaian` (
 CREATE TABLE `pembelian` (
   `id` int(255) NOT NULL,
   `kode_pembelian` int(168) NOT NULL,
-  `id_barang` int(255) NOT NULL,
-  `jumlah` int(128) NOT NULL,
-  `harga` varchar(168) NOT NULL
+  `id_barang` int(11) NOT NULL,
+  `jumlah` varchar(168) NOT NULL,
+  `harga` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -84,6 +91,13 @@ CREATE TABLE `satuan` (
   `id` int(100) NOT NULL,
   `nama_satuan` varchar(168) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `satuan`
+--
+
+INSERT INTO `satuan` (`id`, `nama_satuan`) VALUES
+(1, 'Asik356');
 
 --
 -- Indexes for dumped tables
@@ -115,7 +129,8 @@ ALTER TABLE `pemakaian`
 -- Indexes for table `pembelian`
 --
 ALTER TABLE `pembelian`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_barang` (`id_barang`);
 
 --
 -- Indexes for table `satuan`
@@ -143,7 +158,7 @@ ALTER TABLE `kategori_barang`
 -- AUTO_INCREMENT for table `pemakaian`
 --
 ALTER TABLE `pemakaian`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `pembelian`
@@ -155,7 +170,7 @@ ALTER TABLE `pembelian`
 -- AUTO_INCREMENT for table `satuan`
 --
 ALTER TABLE `satuan`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
