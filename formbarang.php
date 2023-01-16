@@ -30,7 +30,11 @@
                         <input class="form-control" type="text" name="no_hp" placeholder="No hp" aria-label="default input example">
                     </div>
                     <div class="col-md-6">
-                        <label for="password">: </label>
+                        <label for="password">Jumlah Stok : </label>
+                        <input class="form-control" type="password" name="password" placeholder="password" aria-label="default input example">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="password">Id Kategori : </label>
                         <input class="form-control" type="password" name="password" placeholder="password" aria-label="default input example">
                     </div>
                     <div class="col-md-12">
