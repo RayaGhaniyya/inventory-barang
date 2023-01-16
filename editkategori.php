@@ -29,7 +29,8 @@ include('head.php');
 <header>
     <p>
         <b>
-            Formulir Edit Kategori
+            EDIT KATEGORI
+        </b>
     </p>
 </header>
 

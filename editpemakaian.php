@@ -32,14 +32,15 @@ include('head.php');
 <header>
     <p>
         <b>
-            Formulir Edit Kategori
+            EDIT PEMAKAIAN
+        </b>
     </p>
 </header>
 
 <form action="proseseditpemakaian.php" method="POST">
     <input type="hidden" name="id" value="<?php echo $pemakaian['id'] ?>" />
     <div class="container">
-        <div class="card card-kategori-edit">
+        <div class="card card-pemakaian-edit">
             <div class="card-body">
 
                 <div class="row">
@@ -58,16 +59,16 @@ include('head.php');
                                 echo "<option value=" . $barang['id_barang'] . " $selected>" . $barang['id_barang'] . "</option>";
                             } ?>
                         </select>
-                    <div class="col-12">
-                        <label for="jumlah">jumlah :</label>
-                        <input class="form-control" type="text" name="jumlah" placeholder="masukkan jumlah" aria-label="default input example" value="<?php echo $pemakaian['jumlah'] ?>">
+                        <div class="col-6">
+                            <label for="jumlah">jumlah :</label>
+                            <input class="form-control" type="text" name="jumlah" placeholder="masukkan jumlah" aria-label="default input example" value="<?php echo $pemakaian['jumlah'] ?>">
+                        </div>
+                        <div class="col-12">
+                            <input type="submit" value="Simpan" name="simpan" class="btn btn-dark" />
+                        </div>
                     </div>
-                    <div class="col-12">
-                        <input type="submit" value="Simpan" name="simpan" class="btn btn-dark" />
-                    </div>
-                </div>
 
+                </div>
             </div>
         </div>
-    </div>
 </form>

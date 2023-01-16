@@ -24,6 +24,10 @@ p{
     color: rgb(255, 255, 255)    ;
 }
 
+label{
+    padding-top: 10px;
+}
+
 .table{
     
     color: white;
@@ -86,6 +90,35 @@ p{
 .card-barang{
     
     margin: auto;
+    width: 60%;
+}
+
+.card-kategori-edit{
+    
+    margin: auto;
     width: 40%;
 }
 
+.card-satuan-edit{
+    
+    margin: auto;
+    width: 40%;
+}
+
+.card-pembelian-edit{
+    
+    margin: auto;
+    width: 50%;
+}
+
+.card-pemakaian-edit{
+    
+    margin: auto;
+    width: 50%;
+}
+
+.card-barang-edit{
+    
+    margin: auto;
+    width: 60%;
+}

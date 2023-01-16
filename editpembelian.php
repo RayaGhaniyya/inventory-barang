@@ -38,7 +38,7 @@ if (mysqli_num_rows($query) < 1) {
 
     <p>
         <b>
-            Form Edit Pembelian
+            EDIT PEMBELIAN
         </b>
     </p>
 </header>
@@ -57,16 +57,16 @@ if (mysqli_num_rows($query) < 1) {
                         </div>
                         <div class="col-md-6">
 
-                        <label for="id_barang">Pilih Barang: </label>
-                        <select name="id_barang" class="form-control" aria-label="default input example">
-                            <option value="">Pilih Barang</option>
-                            <?php
-                            while ($barang = mysqli_fetch_assoc($querybarang)) {
-                                $selected = $barang['id_barang'] == $barang['id_barang'] ? 'selected="selected"' : '';
-                                echo "<option value=" . $barang['id_barang'] . " $selected>" . $barang['id_barang'] . "</option>";
-                            } ?>
-                        </select>
-                           
+                            <label for="id_barang">Pilih Barang: </label>
+                            <select name="id_barang" class="form-control" aria-label="default input example">
+                                <option value="">Pilih Barang</option>
+                                <?php
+                                while ($barang = mysqli_fetch_assoc($querybarang)) {
+                                    $selected = $barang['id_barang'] == $barang['id_barang'] ? 'selected="selected"' : '';
+                                    echo "<option value=" . $barang['id_barang'] . " $selected>" . $barang['id_barang'] . "</option>";
+                                } ?>
+                            </select>
+
                         </div>
                         <div class="col-md-6">
                             <label for="jumlah">Jumlah :</label>

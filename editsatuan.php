@@ -29,8 +29,10 @@ include('head.php');
 
 <header>
     <p>
+
         <b>
-            Formulir Edit Satuan
+            EDIT SATUAN
+        </b>
     </p>
 </header>
 

@@ -29,14 +29,15 @@ include('head.php');
 <header>
     <p>
         <b>
-            Formulir Edit Kategori
+            EDIT BARANG
+        </b>
     </p>
 </header>
 
 <form action="proseseditbarang.php" method="POST">
     <input type="hidden" name="id" value="<?php echo $barang['id'] ?>" />
     <div class="container">
-        <div class="card card-kategori-edit">
+        <div class="card card-barang-edit">
             <div class="card-body">
 
                 <div class="row">
