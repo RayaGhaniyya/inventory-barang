@@ -55,35 +55,7 @@
                         <input type="submit" value="Daftar" name="daftar" class="btn btn-dark" />
                     </div>
                   
-                    <!-- <div class="col-md-6">
-                        <label for="id_satuan">Pilih Satuan: </label>
-                        <select name="id_satuan" class="form-control" aria-label="default input example">
-                            <option value="">Pilih Barang</option>
-                            <?php
-                            while ($satuan = mysqli_fetch_assoc($querysatuan)) {
-                                echo "<option value=" . $satuan['id'] . ">" . $satuan['nama_satuan'] . "</option>";
-                            } ?>
-                        </select>
-                    </div> -->
-
-
-                    <!-- <div class="col-md-6">
-                        <label for="password">Jumlah Stok : </label>
-                        <input class="form-control" type="text" name="jumlah_stok" placeholder="jumlah stok" aria-label="default input example">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="id_kategori">Pilih Kategori: </label>
-                        <select name="id_kategori" class="form-control" aria-label="default input example">
-                            <option value="">Pilih Kategori</option>
-                            <?php
-                            while ($kategori_barang = mysqli_fetch_assoc($querykategori)) {
-                                echo "<option value=" . $kategori_barang['id'] . ">" . $kategori_barang['nama_kategori'] . "</option>";
-                            } ?>
-                        </select>
-                    </div>
-                    <div class="col-md-12">
-                        <input type="submit" value="Daftar" name="daftar" class="btn btn-dark" />
-                    </div> -->
+                    
                 </div>
             </div>
         </div>
