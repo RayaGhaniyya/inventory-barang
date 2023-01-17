@@ -1,4 +1,7 @@
-<?php include('head.php') ?>
+<?php
+include('../head.php');
+include("../koneksi/koneksi.php");
+?>
 
 <header>
     <p>
