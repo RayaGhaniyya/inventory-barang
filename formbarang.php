@@ -11,10 +11,12 @@
 
 
 <form action="storebarang.php" method="POST">
-<?php
+    <?php
     include("koneksi.php");
     $sql = "SELECT * FROM satuan";
     $query = mysqli_query($db, $sql);
+    $sqlkategori = "SELECT * FROM kategori_barang";
+    $querykategori = mysqli_query($db, $sqlkategori);
     ?>
 
     <div class="container">
@@ -33,7 +35,7 @@
                             <?php
                             while ($satuan = mysqli_fetch_assoc($query)) {
                                 echo "<option value=" . $satuan['id'] . ">" . $satuan['nama_satuan'] . "</option>";
-                            } 
+                            }
                             ?>
                         </select>
                     </div>
@@ -41,12 +43,13 @@
                         <label for="password">Jumlah Stok : </label>
                         <input class="form-control" type="text" name="jumlah_stok" placeholder="jumlah stok" aria-label="default input example">
                     </div>
+
                     <div class="col-md-6">
                         <label for="id_kategori">Pilih Kategori: </label>
                         <select name="id_kategori" class="form-control" aria-label="default input example">
                             <option value="">Pilih Kategori</option>
                             <?php
-                            while ($kategori = mysqli_fetch_assoc($query)) {
+                            while ($kategori = mysqli_fetch_assoc($querykategori)) {
                                 echo "<option value=" . $kategori['id'] . ">" . $kategori['nama_kategori'] . "</option>";
                             } ?>
                         </select>
@@ -54,8 +57,11 @@
                     <div class="col-md-12">
                         <input type="submit" value="Daftar" name="daftar" class="btn btn-dark" />
                     </div>
+<<<<<<< HEAD
                   
                     
+=======
+>>>>>>> ca282cc17c6ab5539f0feb80d89778f3bf4b41a2
                 </div>
             </div>
         </div>

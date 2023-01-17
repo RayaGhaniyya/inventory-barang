@@ -49,7 +49,7 @@ include('head.php');
 
                     </div>
                     <div class="col-12">
-                        <input type="submit" value="Simpan" name="simpan" class="btn btn-primary" />
+                        <input type="submit" value="Simpan" name="simpan" class="btn btn-dark" />
                     </div>
                 </div>
 
