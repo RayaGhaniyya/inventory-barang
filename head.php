@@ -48,7 +48,7 @@
                         <a class="nav-link" href="../kategori/listkategori.php">Kategori Barang</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../barang/listbarang.php">barang</a>
+                        <a class="nav-link" href="../barang/listbarang.php">Barang</a>
                     </li>
                 </ul>
             </div>
