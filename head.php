@@ -42,10 +42,10 @@
                         <a class="nav-link" href="../pemakaian/listpemakaian.php">Pemakaian</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../listsatuan.php">Satuan</a>
+                        <a class="nav-link" href="../satuan/listsatuan.php">Satuan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../listkategori.php">Kategori Barang</a>
+                        <a class="nav-link" href="../kategori/listkategori.php">Kategori Barang</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../barang/listbarang.php">barang</a>
