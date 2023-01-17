@@ -29,6 +29,10 @@ include('head.php');
     include("koneksi.php");
     $sql = "SELECT * FROM barang";
     $query = mysqli_query($db, $sql);
+    $jumlah = $_POST['jumlah'];
+    $id_barang = $_POST['id_barang'];
+    $sqlpembelian = "UPDATE barang SET stok = stok + $jumlah WHERE id_barang = $id_barang";
+    $querypembelian = mysqli_query($db, $sqlpembelian);
     ?>
 
 
@@ -52,7 +56,16 @@ include('head.php');
                         </select>
                     </div>
 
-
+                    <div class="col-md-6">
+                        <label for="jumlah">Jumlah : </label>
+                        <select name="jumlah" class="form-control" aria-label="default input example">
+                            <option value="">Jumlah</option>
+                            <?php
+                            while ($barang = mysqli_fetch_assoc($querypembelian)) {
+                                echo "<option value=" . $barang['id'] . ">" . $barang['nama_barang'] . "</option>";
+                            } ?>
+                        </select>
+                    </div>
 
                     <div class="col-md-6">
                         <label for="jumalah">Jumlah: </label>
