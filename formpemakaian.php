@@ -1,6 +1,13 @@
+<?php
+include("koneksi.php");
+include('./head.php')
+?>
 
-<?php include('./head.php') ?>
+<?php
+$sql = "SELECT * FROM barang";
+$query = mysqli_query($db, $sql);
 
+?>
 
 <header>
     <p>
@@ -12,18 +19,7 @@
 
 
 <form action="storepemakaian.php" method="POST">
-    <?php
-    include("koneksi.php");
-    $sql = "SELECT * FROM barang";
-    $query = mysqli_query($db, $sql);
-    $jumlah = $_POST['jumlah'];
-    $id_barang = $_POST['id_barang'];
-    $sqlpemakaian = "UPDATE barang SET stok = stok - $jumlah WHERE id_barang = $id_barang";
-    $querypemakaian = mysqli_query($db, $sqlpemakaian);
 
-    // INSERT INTO pembelian
-    // UPDATE barang SET stok = stok + $jumlah WHERE id_barang = $id_barang;
-    ?>
     <div class="container">
         <div class="card card-pemakaian">
             <div class="card-body">
@@ -43,10 +39,6 @@
                             } ?>
                         </select>
                     </div>
-                    <!-- <div class="col-md-6">
-                        <label for="no_hp">Jumlah : </label>
-                        <input class="form-control" type="text" name="jumlah" placeholder="masukkan jumlah barang" aria-label="default input example">
-                    </div> -->
                     <div class="col-md-12">
                         <input type="submit" value="Daftar" name="daftar" class="btn btn-dark" />
                     </div>
