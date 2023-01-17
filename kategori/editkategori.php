@@ -1,6 +1,6 @@
 <?php
 
-include("koneksi.php");
+include("../koneksi/koneksi.php");
 
 
 if (!isset($_GET['id'])) {
@@ -23,7 +23,7 @@ if (mysqli_num_rows($query) < 1) {
 ?>
 
 <?php
-include('head.php');
+include('../head.php');
 ?>
 
 <header>

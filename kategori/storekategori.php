@@ -1,6 +1,6 @@
 <?php
 
-include("koneksi.php");
+include("../koneksi/koneksi.php");
 
 // 
 if (isset($_POST['daftar'])) {
@@ -17,10 +17,10 @@ if (isset($_POST['daftar'])) {
     // 
     if ($query) {
         // 
-        header('Location: index2.php?status=sukses');
+        header('Location: ../index2.php?status=sukses');
     } else {
         //
-        header('Location: index2.php?status=gagal');
+        header('Location: ../index2.php?status=gagal');
     }
 } else {
     die("Akses dilarang...");
