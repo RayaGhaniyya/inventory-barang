@@ -57,11 +57,7 @@
                     <div class="col-md-12">
                         <input type="submit" value="Daftar" name="daftar" class="btn btn-dark" />
                     </div>
-<<<<<<< HEAD
-                  
-                    
-=======
->>>>>>> ca282cc17c6ab5539f0feb80d89778f3bf4b41a2
+
                 </div>
             </div>
         </div>
