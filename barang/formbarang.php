@@ -1,4 +1,7 @@
-<?php include('head.php') ?>
+<?php
+include('../head.php');
+include("../koneksi/koneksi.php");
+?>
 
 
 <header>
@@ -12,7 +15,7 @@
 
 <form action="storebarang.php" method="POST">
     <?php
-    include("koneksi.php");
+
     $sql = "SELECT * FROM satuan";
     $query = mysqli_query($db, $sql);
     $sqlkategori = "SELECT * FROM kategori_barang";
@@ -75,5 +78,5 @@
 </form>
 
 <?php
-include('bottom.php');
+include('../bottom.php');
 ?>
