@@ -39,6 +39,10 @@ $query = mysqli_query($db, $sql);
                             } ?>
                         </select>
                     </div>
+                    <div class="col-md-6">
+                        <label for="jumalah">Jumlah: </label>
+                        <input class="form-control" type="text" name="jumlah" placeholder="Jumlah" aria-label="default input example">
+                    </div>
                     <div class="col-md-12">
                         <input type="submit" value="Daftar" name="daftar" class="btn btn-dark" />
                     </div>
