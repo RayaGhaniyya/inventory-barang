@@ -28,7 +28,6 @@ include('head.php');
                 $sql = "SELECT pembelian.id,pembelian.kode_pembelian,pembelian.id_barang,pembelian.jumlah,pembelian.harga FROM pembelian LEFT JOIN barang ON pembelian.id_barang=barang.id";
                 $query = mysqli_query($db, $sql);
 
-
                 while ($pembelian = mysqli_fetch_array($query)) {
                     echo "<tr>";
 
@@ -42,7 +41,7 @@ include('head.php');
 
 
                     echo "<td>";
-                    echo '<a href=editpembelian.php?id=' . $pembelian['id'] . ' class="btn btn-warning">Edit</a> | ';
+                    echo "<a href='editpembelian.php?id=" . $pembelian['id'] . "&kode=".$pembelian['kode_pembelian']."' class='btn btn-warning'>Edit</a> | ";
                     echo '<a href="hapuspembelian.php?id=' . $pembelian['id'] . '" class="btn btn-danger">Hapus</a> ';
                     echo "</td>";
 

@@ -4,9 +4,10 @@ include("koneksi.php");
 include("head.php");
 
 
-if (!isset($_GET['id'])) {
+if (empty($_GET['id'])) {
     header('Location: listpembelian.php');
 }
+
 
 
 $id = $_GET['id'];
@@ -51,7 +52,6 @@ if (mysqli_num_rows($query) < 1) {
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-6">
-
                             <label for="kode_pembelian">Kode Pembelian :</label>
                             <input class="form-control" type="text" name="kode_pembelian" placeholder="kode_pembelian" aria-label="default input example" value="<?php echo $pembelian['kode_pembelian'] ?>">
                         </div>

@@ -15,12 +15,10 @@ if (isset($_POST['daftar'])) {
     // 
     $sql =  "INSERT INTO pemakaian (id, kode_pemakaian, id_barang, jumlah) VALUE ('$id', '$kode_pemakaian', '$id_barang', '$jumlah')";
     $query = mysqli_query($db, $sql);
-
-
     //
     //
 
-    $sqlupdatestok = "UPDATE barang SET jumlah_stok = jumlah_stok - $jumlah WHERE id = $id_barang;";
+    $sqlupdatestok = "UPDATE barang SET jumlh_stok = jumlh_stok - $jumlah WHERE id = $id_barang;";
     $query = mysqli_query($db, $sqlupdatestok);
     // 
     if ($query) {
