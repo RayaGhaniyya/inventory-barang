@@ -1,6 +1,6 @@
 <?php
-include("koneksi.php");
-include('./head.php')
+include("../koneksi/koneksi.php");
+include('../head.php')
 ?>
 
 <?php
@@ -53,5 +53,5 @@ $query = mysqli_query($db, $sql);
 </form>
 
 <?php
-include('bottom.php');
+include('../bottom.php');
 ?>
