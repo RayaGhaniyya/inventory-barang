@@ -1,5 +1,5 @@
 <?php
-include('head.php')
+include('../head.php')
 ?>
 
 <header>
@@ -34,5 +34,5 @@ include('head.php')
 </form>
 
 <?php
-include('bottom.php')
+include('../bottom.php')
 ?>

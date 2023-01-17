@@ -1,6 +1,6 @@
 <?php
 
-include("koneksi.php");
+include("../koneksikoneksi.php");
 
 if( isset($_GET['id']) ){
 
