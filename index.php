@@ -103,7 +103,7 @@ include('head.php');
                 Dealer Merdeka
               </b>
             </h1>
-          </div>
+          </div>  
 
           <div class="p-2">
             <h5 style="font-size: medium;">
