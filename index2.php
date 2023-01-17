@@ -1,11 +1,11 @@
 <?php
-
-include('head.php');
+include("../koneksi/koneksi.php");
+include('../head.php');
 ?>
 
 
 <?php
-include('bottom.php');
+include('../bottom.php');
 ?>
 
 <?php if (isset($_GET['status'])) : ?>
