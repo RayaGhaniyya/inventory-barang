@@ -33,5 +33,5 @@ include("../koneksi/koneksi.php");
 </form>
 
 <?php
-include('bottom.php');
+include('../bottom.php');
 ?>

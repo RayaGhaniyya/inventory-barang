@@ -3,7 +3,7 @@
 
 <head>
     <!-- css -->
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="/inventory-barang/style/style.css">
     <!-- akhir css -->
 
     <!-- bs -->
@@ -33,22 +33,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/inventory-barang/index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pembelian/listpembelian.php">Pembelian</a>
+                        <a class="nav-link" href="/inventory-barang/pembelian/listpembelian.php">Pembelian</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pemakaian/listpemakaian.php">Pemakaian</a>
+                        <a class="nav-link" href="/inventory-barang/pemakaian/listpemakaian.php">Pemakaian</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../satuan/listsatuan.php">Satuan</a>
+                        <a class="nav-link" href="/inventory-barang/satuan/listsatuan.php">Satuan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../kategori/listkategori.php">Kategori Barang</a>
+                        <a class="nav-link" href="/inventory-barang/kategori/listkategori.php">Kategori Barang</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../barang/listbarang.php">Barang</a>
+                        <a class="nav-link" href="/inventory-barang/barang/listbarang.php">Barang</a>
                     </li>
                 </ul>
             </div>

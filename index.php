@@ -1,6 +1,6 @@
 <?php
-include("../koneksi/koneksi.php");
-include('../head.php');
+include("koneksi/koneksi.php");
+include('head.php');
 ?>
 
 <header>
@@ -20,13 +20,13 @@ include('../head.php');
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="idm3.jpg" class="idm">
+            <img src="/inventory-barang/gambar/idm3.jpg" class="idm">
           </div>
           <div class="carousel-item">
-            <img src="idm1.jpg" class="idm">
+            <img src="/inventory-barang/gambar/idm1.jpg" class="idm">
           </div>
           <div class="carousel-item">
-            <img src="idm2.jpg" class="idm">
+            <img src="/inventory-barang/gambar/idm2.jpg" class="idm">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -54,5 +54,5 @@ include('../head.php');
   </div>
 </div>
 <?php
-include('../bottom.php');
+include('bottom.php');
 ?>
