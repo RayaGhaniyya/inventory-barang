@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 16, 2023 at 06:12 AM
+-- Generation Time: Jan 17, 2023 at 04:59 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -36,6 +36,13 @@ CREATE TABLE `barang` (
   `id_kategori` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `barang`
+--
+
+INSERT INTO `barang` (`id`, `id_barang`, `nama_barang`, `id_satuan`, `jumlh_stok`, `id_kategori`) VALUES
+(6, 0, 'Sempak GT Man', 10, '10', 0);
+
 -- --------------------------------------------------------
 
 --
@@ -46,6 +53,33 @@ CREATE TABLE `kategori_barang` (
   `id` int(255) NOT NULL,
   `nama_kategori` varchar(168) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `kategori_barang`
+--
+
+INSERT INTO `kategori_barang` (`id`, `nama_kategori`) VALUES
+(8, 'Sempak');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `login`
+--
+
+CREATE TABLE `login` (
+  `id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `login`
+--
+
+INSERT INTO `login` (`id`, `username`, `email`, `password`) VALUES
+(1, 'raditfirmansyah123', 'raditfirmansyah123@gmail.com', '25d55ad283aa400af464c76d713c07ad');
 
 -- --------------------------------------------------------
 
@@ -65,7 +99,13 @@ CREATE TABLE `pemakaian` (
 --
 
 INSERT INTO `pemakaian` (`id`, `kode_pemakaian`, `id_barang`, `jumlah`) VALUES
-(1, 0, 1, 0);
+(3, 123, 1, 9),
+(5, 8, 2, 90),
+(7, 8, 1, 18),
+(8, 1, 6, 5),
+(9, 1, 6, 5),
+(10, 1, 6, 5),
+(11, 1, 6, 5);
 
 -- --------------------------------------------------------
 
@@ -80,6 +120,20 @@ CREATE TABLE `pembelian` (
   `jumlah` varchar(168) NOT NULL,
   `harga` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `pembelian`
+--
+
+INSERT INTO `pembelian` (`id`, `kode_pembelian`, `id_barang`, `jumlah`, `harga`) VALUES
+(1, 1267567, 0, 'reg', '2314'),
+(6, 126, 2, 'reg', '2314'),
+(9, 126, 1, '5', '200000'),
+(10, 126, 1, '8', '5678'),
+(11, 126, 2, '6', '5000'),
+(12, 126, 1, '20', '2314'),
+(13, 126, 5, '5', '5678'),
+(14, 1, 6, '15', '150000');
 
 -- --------------------------------------------------------
 
@@ -97,7 +151,9 @@ CREATE TABLE `satuan` (
 --
 
 INSERT INTO `satuan` (`id`, `nama_satuan`) VALUES
-(1, 'Asik356');
+(8, 'slop'),
+(9, 'pak'),
+(10, 'pcs');
 
 --
 -- Indexes for dumped tables
@@ -116,6 +172,12 @@ ALTER TABLE `barang`
 -- Indexes for table `kategori_barang`
 --
 ALTER TABLE `kategori_barang`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `login`
+--
+ALTER TABLE `login`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -146,31 +208,37 @@ ALTER TABLE `satuan`
 -- AUTO_INCREMENT for table `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `kategori_barang`
 --
 ALTER TABLE `kategori_barang`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `login`
+--
+ALTER TABLE `login`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `pemakaian`
 --
 ALTER TABLE `pemakaian`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `pembelian`
 --
 ALTER TABLE `pembelian`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `satuan`
 --
 ALTER TABLE `satuan`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
