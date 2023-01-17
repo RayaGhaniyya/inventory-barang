@@ -3,7 +3,7 @@
 
 <head>
     <!-- css -->
-    <link rel="stylesheet" href="http://localhost/inventory-barang/style.css">
+    <link rel="stylesheet" href="../style/style.css">
     <!-- akhir css -->
 
     <!-- bs -->
