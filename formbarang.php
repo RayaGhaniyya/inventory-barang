@@ -46,8 +46,8 @@
                         <select name="id_kategori" class="form-control" aria-label="default input example">
                             <option value="">Pilih Kategori</option>
                             <?php
-                            while ($kategori = mysqli_fetch_assoc($query)) {
-                                echo "<option value=" . $kategori['id'] . ">" . $kategori['nama_kategori'] . "</option>";
+                            while ($kategori_barang = mysqli_fetch_assoc($query)) {
+                                echo "<option value=" . $kategori_barang['id'] . ">" . $kategori_barang['nama_kategori'] . "</option>";
                             } ?>
                         </select>
                     </div>
@@ -76,7 +76,7 @@
                         <select name="id_kategori" class="form-control" aria-label="default input example">
                             <option value="">Pilih Kategori</option>
                             <?php
-                            while ($kategori_barang = mysqli_fetch_assoc($querykategori)) {
+                            while ($kategori_ = mysqli_fetch_assoc($querykategori_barang)) {
                                 echo "<option value=" . $kategori_barang['id'] . ">" . $kategori_barang['nama_kategori'] . "</option>";
                             } ?>
                         </select>
