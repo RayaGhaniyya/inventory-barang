@@ -36,7 +36,7 @@
                         <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="listpembelian.php">Pembelian</a>
+                        <a class="nav-link" href="./pembelian/listpembelian.php">Pembelian</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="listpemakaian.php">Pemakaian</a>

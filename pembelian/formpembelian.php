@@ -13,7 +13,7 @@
 <!-- <body> -->
 
 <?php
-include('head.php');
+include('../head.php');
 ?>
 
 <header>
@@ -26,7 +26,7 @@ include('head.php');
 
 <form action="storepembelian.php" method="POST">
     <?php
-    include("koneksi.php");
+    include("../koneksi/koneksi.php");
     $sql = "SELECT * FROM barang";
     $query = mysqli_query($db, $sql);
     ?>
@@ -111,5 +111,5 @@ include('head.php');
 </html> -->
 
 <?php
-include('bottom.php');
+include('../bottom.php');
 ?>

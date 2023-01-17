@@ -1,7 +1,7 @@
 <?php
 
-include("koneksi.php");
-include("head.php");
+include("../koneksi/koneksi.php");
+include("../head.php");
 
 
 if (empty($_GET['id'])) {
@@ -95,7 +95,7 @@ if (mysqli_num_rows($query) < 1) {
 </form>
 </div>
 <?php
-include("bottom.php")
+include("../bottom.php")
 ?>
 <!-- </body>
 </html> -->

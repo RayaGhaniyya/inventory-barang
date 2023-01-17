@@ -1,6 +1,6 @@
 <?php
-include("koneksi.php");
-include('head.php');
+include("../koneksi/koneksi.php");
+include('../head.php');
 ?>
 <header>
     <p>
@@ -68,7 +68,7 @@ include('head.php');
 </div>
 
 <?php
-include('bottom.php');
+include('../bottom.php');
 ?>
 <!-- </body>
 
