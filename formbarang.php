@@ -43,20 +43,30 @@
                         <label for="password">Jumlah Stok : </label>
                         <input class="form-control" type="text" name="jumlah_stok" placeholder="jumlah stok" aria-label="default input example">
                     </div>
+                    <div class="col-md-12">
+                        <input type="submit" value="Daftar" name="daftar" class="btn btn-dark" />
+                    </div>
 
+
+
+                    <!-- <div class="col-md-6">
+                        <label for="password">Jumlah Stok : </label>
+                        <input class="form-control" type="text" name="jumlah_stok" placeholder="jumlah stok" aria-label="default input example">
+                    </div>
                     <div class="col-md-6">
                         <label for="id_kategori">Pilih Kategori: </label>
                         <select name="id_kategori" class="form-control" aria-label="default input example">
                             <option value="">Pilih Kategori</option>
                             <?php
-                            while ($kategori = mysqli_fetch_assoc($querykategori)) {
-                                echo "<option value=" . $kategori['id'] . ">" . $kategori['nama_kategori'] . "</option>";
+                            while ($kategori_ = mysqli_fetch_assoc($querykategori_barang)) {
+                                echo "<option value=" . $kategori_barang['id'] . ">" . $kategori_barang['nama_kategori'] . "</option>";
                             } ?>
                         </select>
                     </div>
                     <div class="col-md-12">
                         <input type="submit" value="Daftar" name="daftar" class="btn btn-dark" />
-                    </div>
+                    </div> -->
+
 
                 </div>
             </div>
