@@ -36,19 +36,19 @@
                         <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pembelian/listpembelian.php">Pembelian</a>
+                        <a class="nav-link" href="../pembelian/listpembelian.php">Pembelian</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pemakaian/listpemakaian.php">Pemakaian</a>
+                        <a class="nav-link" href="../pemakaian/listpemakaian.php">Pemakaian</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="listsatuan.php">Satuan</a>
+                        <a class="nav-link" href="../listsatuan.php">Satuan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="listkategori.php">Kategori Barang</a>
+                        <a class="nav-link" href="../listkategori.php">Kategori Barang</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="barang/listbarang.php">barang</a>
+                        <a class="nav-link" href="../barang/listbarang.php">barang</a>
                     </li>
                 </ul>
             </div>
