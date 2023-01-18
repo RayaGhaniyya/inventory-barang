@@ -78,10 +78,14 @@ if (mysqli_num_rows($query) < 1) {
                             <label for="harga">Harga:</label>
                             <input class="form-control" type="harga" name="harga" placeholder="harga" aria-label="default input example" value="<?php echo $pembelian['harga'] ?>">
                         </div>
-                        <div class="col-md-12">
+                        <div class="row justify-content-between text-center">
+                            <div class="col-md-4">
+                                <input type="submit" value="Simpan" name="simpan" class="btn btn-dark" />
 
-                            <input type="submit" value="Simpan" name="simpan" class="btn btn-dark" />
-
+                            </div>
+                            <div class="col-md-4">
+                                <a class="btn btn-dark" href="listpembelian.php">Kembali</a>
+                            </div>
                         </div>
                     </div>
                 </div>

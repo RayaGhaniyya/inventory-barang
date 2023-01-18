@@ -46,23 +46,35 @@ if (!isset($_SESSION['username'])) {
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/inventory-barang/index.php">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/inventory-barang/pembelian/listpembelian.php">Pembelian</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/inventory-barang/pembelian/listpembelian.php">Pembelian</a></li>
+                            <li><a class="dropdown-item" href="/inventory-barang/pemakaian/listpemakaian.php">Pemakaian</a></li>
+                            <li><a class="dropdown-item" href="/inventory-barang/satuan/listsatuan.php">Satuan</a></li>
+                            <li><a class="dropdown-item" href="/inventory-barang/kategori/listkategori.php">Kategori Barang</a></li>
+                            <li><a class="dropdown-item" href="/inventory-barang/barang/listbarang.php">Barang</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" >Pembelian</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/inventory-barang/pemakaian/listpemakaian.php">Pemakaian</a>
+                        <a class="nav-link" href=>Pemakaian</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/inventory-barang/satuan/listsatuan.php">Satuan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/inventory-barang/kategori/listkategori.php">Kategori Barang</a>
+                        <a class="nav-link" href=>Kategori Barang</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/inventory-barang/barang/listbarang.php">Barang</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="/inventory-barang/logout.php">Login</a>
+                        <a class="nav-link" href="/inventory-barang/logout.php">Logout</a>
                     </li>
                 </ul>
             </div>

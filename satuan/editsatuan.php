@@ -48,9 +48,16 @@ include('../head.php');
                         <input class="form-control" type="text" name="nama_satuan" placeholder="nama_satuan" aria-label="default input example" value="<?php echo $satuan['nama_satuan'] ?>">
 
                     </div>
-                    <div class="col-12">
-                        <input type="submit" value="Simpan" name="simpan" class="btn btn-dark" />
+                    <div class="row justify-content-between text-center">
+                        <div class="col-md-4">
+                            <input type="submit" value="Simpan" name="simpan" class="btn btn-dark" />
+
+                        </div>
+                        <div class="col-md-4">
+                            <a class="btn btn-dark" href="listsatuan.php">Kembali</a>
+                        </div>
                     </div>
+
                 </div>
 
             </div>

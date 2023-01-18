@@ -85,10 +85,16 @@ include('../head.php');
                         </select>
                     </div>
 
+                    <div class="row justify-content-between text-center">
+                        <div class="col-md-4">
+                            <input type="submit" value="Simpan" name="simpan" class="btn btn-dark" />
 
-                    <div class="col-12">
-                        <input type="submit" value="Simpan" name="simpan" class="btn btn-dark" />
+                        </div>
+                        <div class="col-md-4">
+                            <a class="btn btn-dark" href="listbarang.php">Kembali</a>
+                        </div>
                     </div>
+
                 </div>
 
             </div>

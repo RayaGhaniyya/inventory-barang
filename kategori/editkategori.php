@@ -46,8 +46,14 @@ include('../head.php');
                         <input class="form-control" type="text" name="nama_kategori" placeholder="Nama Kategori" aria-label="default input example" value="<?php echo $kategori['nama_kategori'] ?>">
 
                     </div>
-                    <div class="col-12">
-                        <input type="submit" value="Simpan" name="simpan" class="btn btn-dark" />
+                    <div class="row justify-content-between text-center">
+                        <div class="col-md-4">
+                            <input type="submit" value="Simpan" name="simpan" class="btn btn-dark" />
+
+                        </div>
+                        <div class="col-md-4">
+                            <a class="btn btn-dark" href="listkategori.php">Kembali</a>
+                        </div>
                     </div>
                 </div>
 

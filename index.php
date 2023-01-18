@@ -13,20 +13,36 @@ include('head.php');
   <div class="row pt-3">
     <div class="col-6">
 
-      <div class="slide-wrapper">
-        <input type="radio" name="slider" id="slider1" checked>
-        <label for="slider1"></label>
-        <div class="slide slide1"></div>
-
-        <input type="radio" name="slider" id="slider2">
-        <label for="slider2"></label>
-        <div class="slide slide2"></div>
-
-        <input type="radio" name="slider" id="slider3">
-        <label for="slider3"></label>
-        <div class="slide slide3"></div>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/inventory-barang/gambar/idm1.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="/inventory-barang/gambar/idm2.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="/inventory-barang/gambar/idm3.jpg" class="d-block w-100">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+
     </div>
+
+
 
     <div class="col-6" style="color: white;
     text-align: start;
@@ -41,6 +57,7 @@ include('head.php');
     </div>
   </div>
 </div>
+
 
 <?php
 include('bottom.php');
