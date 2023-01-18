@@ -9,6 +9,7 @@ if (!isset($_SESSION['username'])) {
 <html lang="en">
 
 <head>
+
     <!-- css -->
     <link rel="stylesheet" href="/inventory-barang/style/style.css">
     <!-- akhir css -->
@@ -61,7 +62,7 @@ if (!isset($_SESSION['username'])) {
                         <a class="nav-link" href="/inventory-barang/barang/listbarang.php">Barang</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/inventory-barang/logout.php">Logout</a>
+                        <a class="nav-link" href="/inventory-barang/logout.php">Login</a>
                     </li>
                 </ul>
             </div>

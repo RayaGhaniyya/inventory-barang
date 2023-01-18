@@ -129,10 +129,69 @@ label{
 }
 
 
-.carousel-item img{
+/* .carousel-item img{
     border-radius: 20px;
     align-items: center;
     border: 10px solid white;
     width: 100%;
-    /* height: 350px; */
+   
+} */
+
+
+.slide-wrapper {
+    border: 10px solid white;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
 }
+input {
+    visibility: hidden;
+    opacity: 0;
+}
+label {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: rgba(187,187,187,0.4);
+    transition: 0.4;
+    border: 2px solid rgba(255,255,255,0.5);
+}
+label[for="slider2"]{margin-top: 20px;}
+label[for="slider3"]{margin-top: 40px;}
+
+input:checked + label , label:hover {background: #fff;}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateY(-100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition-duration: .4s;
+    opacity: 1;
+    transform-origin: 50% 50%;
+}
+input:checked + .slide {
+    transform: translateY(100%);
+}
+input:checked + label + .slide {
+    transform: translateY(0);
+    opacity: 1;
+}
+.slide1 {background-image: url(/inventory-barang/gambar/idm1.jpg);}
+.slide2 {background-image: url(/inventory-barang/gambar/idm2.jpg);}
+.slide3 {background-image: url(/inventory-barang/gambar/idm3.jpg);}
