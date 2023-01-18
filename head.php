@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <!-- css -->
     <link rel="stylesheet" href="/inventory-barang/style/style.css">
     <!-- akhir css -->
