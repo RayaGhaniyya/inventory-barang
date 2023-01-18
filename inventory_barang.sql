@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 17, 2023 at 04:59 PM
+-- Generation Time: Jan 18, 2023 at 03:49 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -60,26 +60,6 @@ CREATE TABLE `kategori_barang` (
 
 INSERT INTO `kategori_barang` (`id`, `nama_kategori`) VALUES
 (8, 'Sempak');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `login`
---
-
-CREATE TABLE `login` (
-  `id` int(11) NOT NULL,
-  `username` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `login`
---
-
-INSERT INTO `login` (`id`, `username`, `email`, `password`) VALUES
-(1, 'raditfirmansyah123', 'raditfirmansyah123@gmail.com', '25d55ad283aa400af464c76d713c07ad');
 
 -- --------------------------------------------------------
 
@@ -155,6 +135,30 @@ INSERT INTO `satuan` (`id`, `nama_satuan`) VALUES
 (9, 'pak'),
 (10, 'pcs');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `userlogin`
+--
+
+CREATE TABLE `userlogin` (
+  `id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `userlogin`
+--
+
+INSERT INTO `userlogin` (`id`, `username`, `email`, `password`) VALUES
+(1, 'raya', 'rayayuda@gmail.com', '8723b9e8caa891ff1db2645944044e5c'),
+(2, 'inant', 'inant@mail.com', '5f4dcc3b5aa765d61d8327deb882cf99'),
+(3, 'luna', 'luna@mail.com', '5f4dcc3b5aa765d61d8327deb882cf99'),
+(4, 'luna123', 'luna123@mail.com', '5f4dcc3b5aa765d61d8327deb882cf99'),
+(5, 'lukman', 'lukman123@gmail.com', '202cb962ac59075b964b07152d234b70');
+
 --
 -- Indexes for dumped tables
 --
@@ -172,12 +176,6 @@ ALTER TABLE `barang`
 -- Indexes for table `kategori_barang`
 --
 ALTER TABLE `kategori_barang`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `login`
---
-ALTER TABLE `login`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -201,6 +199,12 @@ ALTER TABLE `satuan`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `userlogin`
+--
+ALTER TABLE `userlogin`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -215,12 +219,6 @@ ALTER TABLE `barang`
 --
 ALTER TABLE `kategori_barang`
   MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
---
--- AUTO_INCREMENT for table `login`
---
-ALTER TABLE `login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `pemakaian`
@@ -239,6 +237,12 @@ ALTER TABLE `pembelian`
 --
 ALTER TABLE `satuan`
   MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `userlogin`
+--
+ALTER TABLE `userlogin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
