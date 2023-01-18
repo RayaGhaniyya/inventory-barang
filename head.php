@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    echo "<script>alert('Koen gorong login cook !!!')</script>";
+    header("Location: /inventory-barang/indexlogin.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 

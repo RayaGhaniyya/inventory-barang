@@ -1,13 +1,13 @@
-<?php
+<!-- <?php
 
 include('koneksi/koneksi.php');
 
-?>
+?> -->
 
 
 <?php
 
-error_reporting(1);
+error_reporting(0);
 
 session_start();
 
@@ -50,7 +50,11 @@ if (isset($_POST['submit'])) {
 
 <body>
     <!-- <div class="alert alert-warning" role="alert">
-        <?php echo $_SESSION['error'] ?>
+        <?php 
+        if ($gagal) {
+            echo 'Username atau password salah';
+        }
+        ?>
     </div> -->
 
     <div class="container">
