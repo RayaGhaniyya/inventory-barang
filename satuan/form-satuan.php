@@ -23,6 +23,7 @@ include("../koneksi/koneksi.php");
                         <label for="nama_satuan">Nama Satuan: </label>
                         <input class="form-control" type="text" name="nama_satuan" placeholder="nama_satuan" aria-label="default input example">
                     </div>
+
                     <div class="row justify-content-between text-center">
                         <div class="col-md-4">
                             <input type="submit" value="Daftar" name="daftar" class="btn btn-dark" />
