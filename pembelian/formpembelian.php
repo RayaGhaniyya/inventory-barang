@@ -62,8 +62,14 @@ include('../head.php');
                         <label for="harga">Harga: </label>
                         <input class="form-control" type="text" name="harga" placeholder="harga" aria-label="default input example">
                     </div>
-                    <div class="col-md-12">
-                        <input type="submit" value="Daftar" name="daftar" class="btn btn-dark" />
+                    <div class="justify-content-between text-center">
+                        <div class="col-md-4">
+                            <input type="submit" value="Daftar" name="daftar" class="btn btn-dark" />
+                        </div>
+
+                        <div class="col-md-4">
+                            <a class="btn btn-dark" href="listpembelian.php">Kembali</a>
+                        </div>
                     </div>
                 </div>
             </div>
