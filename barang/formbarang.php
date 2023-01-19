@@ -47,13 +47,15 @@ include("../koneksi/koneksi.php");
                         <input class="form-control" type="text" name="jumlah_stok" placeholder="jumlah stok" aria-label="default input example">
                     </div>
 
+                    <div class="row justify-content-between text-center">
+                        <div class="col-md-4">
+                            <input type="submit" value="Daftar" name="daftar" class="btn btn-dark" />
+                        </div>
 
-                    <div class="col-md-12">
-                        <input type="submit" value="Daftar" name="daftar" class="btn btn-dark" />
+                        <div class="col-md-4">
+                            <a class="btn btn-dark" href="listbarang.php">Kembali</a>
+                        </div>
                     </div>
-
-
-
                     <!-- <div class="col-md-6">
                         <label for="password">Jumlah Stok : </label>
                         <input class="form-control" type="text" name="jumlah_stok" placeholder="jumlah stok" aria-label="default input example">

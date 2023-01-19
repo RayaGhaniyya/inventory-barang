@@ -24,12 +24,15 @@ include('../head.php')
                     </div>
 
 
+                    <div class="row justify-content-between text-center">
+                        <div class="col-md-4">
+                            <input type="submit" value="Daftar" name="daftar" class="btn btn-dark" />
+                        </div>
 
-                    <div class="col-md-12">
-                        <input type="submit" value="Daftar" name="daftar" class="btn btn-dark" />
+                        <div class="col-md-4">
+                            <a class="btn btn-dark" href="listkategori.php">Kembali</a>
+                        </div>
                     </div>
-
-
 
                 </div>
             </div>
